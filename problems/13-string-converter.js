@@ -13,6 +13,19 @@ console.log(stringConverter("raccoon")); // => {r: 1, a: 1, c: 2, o: 2, n: 1}
 
 function stringConverter(string) {
   // Your code here
+  let array = string.split("");
+  let objCount = {};
+
+  for (index in array) {
+    let currentElement = array[index];
+    if (objCount[currentElement]) {
+      objCount[currentElement] += 1;
+    }
+    else {
+      objCount[currentElement] = 1;
+    }
+  }
+  return objCount;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

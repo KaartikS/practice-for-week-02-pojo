@@ -12,6 +12,8 @@ spreadItOut(["apple", "banana"], [1,2,3]); // => ["apple", "banana", 1, 2, 3];
 
 function spreadItOut(array1, array2) {
   // Your code here
+  let concatenatedArray = [...array1, ...array2];
+  return concatenatedArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
